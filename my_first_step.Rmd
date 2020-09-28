@@ -1,0 +1,29 @@
+---
+title: "my_first_step"
+author: "Vitalii Lebediuk"
+date: "28 09 2020"
+output: html_document
+---
+
+## Про функції в R
+  
+Кожна функція складається з 3-ох частин: name, argument(s), body. Назва функції повинна бути: short, clear, descriptive, verbs (action words), ”snake case”. Більш детальніше про функції можна прочитати [тут](https://www.tutorialspoint.com/r/r_functions.htm).
+
+Далі ми побачимо як виглядає функція в R:
+
+```{r}
+celsius_to_fahrenheit <- function(C){
+  F <- C * (9/5) + 32
+  return(paste("The entered Celsius temperature is", F, "degrees Fahrenheit."))
+}
+```
+
+## Тут моя перша візуалізація
+
+Я візуалізував дані з набору mtcars:
+
+```{r echo=FALSE}
+plot(mtcars$cyl)
+```
+
+Мабуть непогано для початку.
